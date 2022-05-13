@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Ovinos</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="script/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     
@@ -31,7 +31,7 @@
 
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-         <a class="navbar-brand" href="#">Cabanha M.Sol</a>
+         <a class="navbar-brand" href="index.html"> <img src="img/favicon.ico" alt="icon">CABANHA M.SOL</a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -62,11 +62,25 @@
     </header> <!-- section-header.// -->
     
     <section>
-
-        
-
-		<a href="" class="btn btn-success">Botão</a>
-		<br><br>
+        <div class="container">
+            <form action="cadastro.php">
+          
+              <label for="num">Número</label>
+              <input type="text" id="num" name="numero">
+          
+              <label for="num_mae">Número da Mãe</label>
+              <input type="text" id="num_mae" name="numero_da_mae">
+          
+              <label for="sexo">Sexo</label>
+              <select id="sexo" name="sexo">
+                <option value="macho">MACHO</option>
+                <option value="femea">FEMEA</option>
+              </select>
+              <br><br>
+              <input type="submit" class="btn btn-success" value="Cadastrar">
+            </form>
+          </div>
+	<br><br>
     </section>
     
     
